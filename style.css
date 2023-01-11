@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.container {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  width: 500px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 4px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container .form-group {
+  margin-bottom: 0.3rem;
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+}
+
+.container .form-group label {
+  display: block;
+}
+
+.container .form-group input {
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.container .form-group small {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: red;
+  visibility: hidden;
+}
+
+.container .form-group.error input {
+  border: 2px solid red;
+}
+
+.container .form-group.error small {
+  visibility: visible;
+}
+
+.container .form-group.success input {
+  border: 2px solid green;
+}
+
+.container h2,
+.container .form-group label,
+.container .form-group input {
+  margin-bottom: 0.4rem;
+}
+
+.container .form-group input:focus {
+  outline: #ddd;
+}
+
+form button {
+  background-color: rgb(87, 129, 236);
+  color: #fff;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+
+form button:hover {
+  background-color: rgb(94, 137, 240);
+}
